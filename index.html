@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,200&family=Staatliches&display=swap" rel="stylesheet"></head>
+<body> 
+    <div class="grille">
+        <section class="logo">
+            <h1>HappyGM</h1>
+            <p>App'IJAT</p>
+        </section>
+
+        <div class="selectUser">
+            <h2> Paramètres </h2>
+            <label for="choix-destination"> Quelle est ta destination ?</label>
+                <select class="zoneInput">
+                        <option>39</option>
+                        <option>44</option>
+                        <option>63</option>
+                </select>
+            <label for="choix-date" class="choixDate">A quelle date est tu partie ?</label>
+                <div class="choixuser">
+                    <input class="choixDateUser" type="date"> 
+                </div>  
+            <label class="choix-heure">A quelle heure est tu partie ?</label>
+            <input class="choixhoursUser" type="number" min="0" max="23" class="choix-heure"> 
+
+            <select class="choixMinUser" class="choix-heure">
+                <option>00</option>
+                <option>15</option>
+                <option>30</option>
+                <option>45</option>
+
+            </select>
+            <button class="btn">Make the money Great Again</button>
+
+            <div class="btnZone">
+                <div class="resultat"></div>
+            </div>
+
+        </div>
+
+        <div class="BoxExplication">
+
+            <div>              
+                <h2> Fonctionnement</h2>
+                <p> Lorsqu'un ordre de mission est rédigé, c'est l'heure de départ qui est prise en compte. Toute journée commencée entraine une IJAT. Chaque jour, à l'heure de ton départ ta cagnotte augmente :) </p>
+            </div>  
+
+            <div>
+                <h3>Zone 1 = 39€</h3>
+                    <ul>
+                        <li>Métropole</li>
+                        <li>Guadeloupe</li>
+                        <li>Martinique</li>
+                        <li>La Réunion</li>
+                        <li>Saint-Barth'</li>
+                        <li>Saint-Martin</li>
+                        <li>Saint-Pierre-et-Miquelon</li>
+                    </ul>
+            </div>   
+                    
+            <div>
+                <h3>Zone 2 = 44€</h3>
+                        <ul>
+                            <li>Guyane</li>
+                        </ul>
+            </div> 
+                    
+            <div>
+                <h3>Zone 3 = 63€</h3>
+                        <ul>
+                            <li>Mayotte</li>
+                            <li>Nouvelle Calédonie</li>
+                            <li>Polynésie Francaise</li>
+                            <li>Wallis-et-Futuna</li>               
+                        </ul>
+            </div>  
+
+            <div class="smallFooter">
+                <p> Arrêté du 29 juin 2015 fixant le taux de l'indemnité journalière d'absence temporaire des personnels des compagnies républicaines de sécurité et des militaires de la gendarmerie se déplaçant en unité ou en fraction d'unité en métropole et outre-mer</p>        
+            </div>         
+    </div>  
+
+    <script src="decompte.js"></script>
+</body>
+</html>

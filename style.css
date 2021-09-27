@@ -1,0 +1,94 @@
+
+*, ::before ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #45556D;  
+  /* background: linear-gradient(180deg, rgba(42,40,40,1) 0%, rgba(102,99,99,1) 69%, rgba(205,202,197,1) 100%); */
+  /* color: #f1f1f1; */
+
+}
+/* GRILLE  */
+.grille {
+  display: grid; 
+  gap: 10px 10px; 
+  border: black solid 1px;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: repeat(3, 50%);
+}
+
+.logo{
+  grid-column: 1/3;
+  grid-row: 1;
+  border: black solid 1px;
+}
+
+.selectUser {
+  border: black solid 1px;
+  grid-column: 1 / 3;
+  grid-row: 2/4;
+  
+}
+
+.BoxExplication {
+  border: black solid 1px;
+  display: grid;
+  grid-column: 3/6;
+  grid-row: 1/5;
+}
+
+.footer {
+  border: black solid 1px;
+  display: grid;
+
+}
+
+/* PARTIE LOGO */
+.logo{
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* PARTIE USER */
+
+.selectUser{
+  background-color: chartreuse;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.btnZone {
+  background-color: lightpink;
+}
+
+.zoneInput {
+  width: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end
+}
+
+.choix-heure{
+background-color: magenta;
+}
+
+/* PARTIE EXPLICATION  */
+
+.BoxExplication{
+  background-color: lightblue;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
